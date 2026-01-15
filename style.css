@@ -1,4 +1,8 @@
 * {
+  box-sizing: border-box;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -101,4 +105,105 @@ h2 {
     padding: 20px;
     background: #111;
     color: #777;
+}
+
+/* SERVICES */
+.service-box {
+    display: flex;
+    gap: 20px;
+}
+.kontakt {
+  background: #020617;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.kontakt h2 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.kontakt-box {
+  max-width: 500px;
+  margin: auto;
+  background: #0f172a;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.kontakt-box input,
+.kontakt-box textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+}
+
+.kontakt-box textarea {
+  height: 120px;
+  resize: none;
+}
+
+.kontakt-box button {
+  width: 100%;
+  padding: 15px;
+  background: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.kontakt-box button:hover {
+  background: #4f46e5;
+}
+
+.socials {
+  margin-top: 40px;
+}
+
+.socials a {
+  color: white;
+  font-size: 28px;
+  margin: 0 15px;
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  color: #6366f1;
+}
+
+@media (max-width: 768px) {
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .kontakt {
+    padding: 60px 15px;
+  }
+
+  .kontakt-box {
+    padding: 20px;
+  }
+
+  .kontakt-box input,
+  .kontakt-box textarea,
+  .kontakt-box button {
+    font-size: 15px;
+  }
+
+  .socials a {
+    font-size: 24px;
+    margin: 0 10px;
+  }
+
 }

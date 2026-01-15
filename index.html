@@ -5,6 +5,8 @@
     <title>Vexo Studio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
@@ -15,7 +17,7 @@
         <li><a href="#home">Start</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#about">About us</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#kontakt">Contact</a></li>
     </ul>
 </nav>
 
@@ -67,10 +69,27 @@
 </section>
 
 <!-- CONTACT -->
-<section class="contact" id="contact">
-    <h2>Kontakt</h2>
-    <p>Schreib uns für dein Projekt:</p>
-    <a href="mailto:vexo.studio@web.de">vexo.studio@web.de</a>
+<section id="kontakt" class="kontakt">
+  <h2>Kontakt</h2>
+
+  <div class="kontakt-box">
+    <form action="https://formspree.io/f/mqeeagay" method="POST">
+      <input type="email" name="email" placeholder="Deine E-Mail" required>
+
+      <textarea name="message" placeholder="Deine Nachricht" required></textarea>
+
+      <button type="submit">Absenden</button>
+    </form>
+  </div>
+
+  <div class="socials">
+    <a href="https://www.tiktok.com/@vs.vexostudio" target="_blank">
+      <i class="fab fa-tiktok"></i>
+    </a>
+    <a href="https://www.instagram.com/dev.razmik" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
 </section>
 
 <footer class="footer">
