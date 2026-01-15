@@ -1,100 +1,181 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <title>Vexo Studio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vexo Studio – Wir bauen Wirkung</title>
+
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/a2d9d5a54b.js" crossorigin="anonymous"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- EXTRA STYLE NUR FÜR GLASS LOGO -->
+  <style>
+    .bg-logo {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30vw;
+      font-weight: 800;
+      color: rgba(255,255,255,0.05);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      pointer-events: none;
+      user-select: none;
+      z-index: 0;
+    }
+
+    .content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .glass-section {
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(14px);
+      border-radius: 28px;
+      padding: 50px;
+      box-shadow: 0 40px 80px rgba(0,0,0,0.4);
+    }
+
+    @media (max-width: 768px) {
+      .bg-logo {
+        font-size: 45vw;
+      }
+
+      .glass-section {
+        padding: 30px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<!-- NAVIGATION -->
-<nav class="navbar">
-    <div class="logo">Vexo<span>Studio</span></div>
-    <ul class="nav-links">
-        <li><a href="#home">Start</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About us</a></li>
-        <li><a href="#kontakt">Contact</a></li>
+<!-- ================= GLASS BACKGROUND LOGO ================= -->
+<div class="bg-logo">VS</div>
+
+<div class="content">
+
+<header>
+  <nav>
+    <div class="logo">Vexo Studio</div>
+    <ul>
+      <li><a href="#intro">Start</a></li>
+      <li><a href="#impact">Wirkung</a></li>
+      <li><a href="#services">Leistung</a></li>
+      <li><a href="#contact">Kontakt</a></li>
     </ul>
-</nav>
+  </nav>
+</header>
 
-<!-- HERO -->
-<section class="hero" id="home">
-    <h1>Vexo Studio,<br>Offiziell Website</h1>
-    <p>Wir entwickeln individuelle Websites ohne Baukästen – modern, schnell und professionell.</p>
-    <a href="#contact" class="btn">Projekt starten</a>
-</section>
+<!-- ================= INTRO ================= -->
+<section id="intro" class="hero">
+  <div class="glass-section">
+    <h1>
+      Deine Website ist<br>
+      <span style="color:#6c7cff;">kein Deko-Element.</span>
+    </h1>
 
-
-<!-- SERVICES -->
-<section class="services" id="services">
-    <h2>Unsere Leistungen</h2>
-    <div class="service-box">
-        <div class="card">Webdesign</div>
-        <div class="card">Webentwicklung</div>
-        <div class="card">SEO & Performance</div>
-    </div>
-</section>
-
-<!-- ABOUT -->
-<section class="about" id="about">
-    <h2>Über Vexo Studio</h2>
-    <p>
-       Willkommen bei Vexo Studio – Webseiten, die wirklich funktionieren!<br><br>Vergiss Wix, WordPress-Baukasten und halbfertige Templates. Wir bauen echte Webseiten von Grund auf,<br> 
-       sauber programmiert, schnell, sicher und genau auf deine Bedürfnisse zugeschnitten.<br>
-       Egal, ob du ein Firmenprojekt, Portfolio oder persönliche Webseite willst – wir bringen deine Ideen insEgal,<br>
-       ob du ein Firmenprojekt, Portfolio oder persönliche Webseite willst – wir bringen deine Ideen ins<br>
-       Web, ohne Kompromisse.<br>
-       <br>
-       <br>
-       <br>
-       <h2>Warum wir?</h2>
-       <br>
-       -Keine Baukästen, kein Copy-Paste – alles sauberer Code.<br>
-       <br>
-       -Modernes Design, das nicht nur gut aussieht, sondern auch funktioniert.<br>
-       <br>
-       -Webseiten, die auf allen Geräten glänzen – vom Smartphone bis zum Desktop.<br>
-       <br>
-       -Und natürlich: wir liefern dir die fertige Webseite, du kannst direkt starten!<br>
-       <br>
-       <br>
-       Deine Idee + unser Code = deine perfekte Webseite.<br>
-       Wenn wir dein Interesse geweckt haben, kontaktiere uns! Unsere E-Mail findest du unten unter „Kontakt“.<br>
-       Wir freuen uns darauf, deine Idee umzusetzen.
+    <p style="margin-top:20px;color:#9aa0b6;">
+      Sie ist dein stärkstes Verkaufswerkzeug.  
+      Der erste Eindruck. Die Entscheidung.
+      <br><br>
+      Vexo Studio entwickelt Websites, die Vertrauen aufbauen,
+      Aufmerksamkeit halten und Besucher in Kunden verwandeln.
     </p>
+
+    <div style="margin-top:30px;display:flex;gap:15px;flex-wrap:wrap;">
+      <a href="#contact" class="btn">Projekt starten</a>
+      <a href="#impact" class="btn" style="background:#11162a;">Warum das funktioniert</a>
+    </div>
+  </div>
 </section>
 
-<!-- CONTACT -->
-<section id="kontakt" class="kontakt">
-  <h2>Kontakt</h2>
+<!-- ================= IMPACT ================= -->
+<section id="impact">
+  <div class="glass-section">
+    <h2>Warum die meisten Websites scheitern</h2>
 
-  <div class="kontakt-box">
-    <form action="https://formspree.io/f/mqeeagay" method="POST">
-      <input type="email" name="email" placeholder="Deine E-Mail" required>
-
-      <textarea name="message" placeholder="Deine Nachricht" required></textarea>
-
-      <button type="submit">Absenden</button>
-    </form>
+    <p style="color:#9aa0b6;max-width:750px;">
+      Zu laut. Zu kompliziert. Keine klare Botschaft.
+      Besucher sind nach 5 Sekunden wieder weg.
+      <br><br>
+      Wir machen das Gegenteil:
+      Klarheit, Struktur und Design mit Zweck.
+      Jede Sektion führt den Nutzer weiter.
+    </p>
   </div>
+</section>
 
+<!-- ================= SERVICES ================= -->
+<section id="services">
+  <h2>Was wir für dich tun</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Strategisches Webdesign</h3>
+      <p>
+        Wir gestalten nicht schön – wir gestalten bewusst.
+        Design lenkt Entscheidungen.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Moderne Entwicklung</h3>
+      <p>
+        Sauberer Code, schnelle Ladezeiten,
+        perfekte Darstellung auf jedem Gerät.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Conversion Fokus</h3>
+      <p>
+        Jede Seite hat ein Ziel:
+        Kontakt, Anfrage, Vertrauen.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+  <div class="glass-section">
+    <h2>Bereit, ernst genommen zu werden?</h2>
+
+    <p style="color:#9aa0b6;max-width:650px;margin-bottom:30px;">
+      Wenn du willst, dass deine Website professionell wirkt
+      und Ergebnisse liefert – schreib uns.
+    </p>
+
+    <div class="contact-box">
+      <form action="https://formspree.io/f/mqeeagay" method="POST">
+        <input type="email" name="email" placeholder="Deine E-Mail" required>
+        <textarea name="message" placeholder="Was hast du vor?" required></textarea>
+        <input type="text" name="_gotcha" style="display:none">
+        <button type="submit">Nachricht senden</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <p>© 2026 Vexo Studio. Built with intent.</p>
   <div class="socials">
-    <a href="https://www.tiktok.com/@vs.vexostudio" target="_blank">
-      <i class="fab fa-tiktok"></i>
-    </a>
-    <a href="https://www.instagram.com/dev.razmik" target="_blank">
-      <i class="fab fa-instagram"></i>
-    </a>
+    <a href="#"><i class="fab fa-tiktok"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
   </div>
-</section>
-
-<footer class="footer">
-    <p>© 2026 Vexo Studio</p>
 </footer>
 
+</div>
 </body>
 </html>
